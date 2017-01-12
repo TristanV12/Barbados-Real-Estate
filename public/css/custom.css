@@ -1,0 +1,39 @@
+body{
+
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-default {
+    background: #E1B866;
+    color: black;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background: #DEE1B6;
+}
+
+img {
+	width:70%;
+	height: auto;
+}
+
+.col-md-4 {
+	text-align: center;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+
+.col-md-12 {
+	text-align:center;
+}

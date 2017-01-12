@@ -1,0 +1,19 @@
+{
+  "name": "Neil",
+  "version": "0.0.1",
+  "description": "Neil's Mom",
+  "private": true,
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "contributors": [
+    {
+      "name": "Tristan Villamil",
+      "email": "villamil101@gmail.com"
+    },
+    {
+      "name": "Ferrohound",
+      "email": "ferrohound@gmail.com"
+    }
+  ]
+}
