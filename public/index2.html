@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<link href='https://fonts.googleapis.com/css?family=Chivo' rel='stylesheet'>
+	<style>
+		body{
+			margin: 0 !important;
+			padding: 0 !important;
+			font-family: 'Chivo';/*font-size: 22px;*/
+		}
+		h1{
+		}
+		ul{
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+			padding: 0;
+			text-align: center;
+		}
+		ol{
+			padding: 0;
+		}
+		li.menu{
+			display: inline-block;
+			width: 20%;
+			text-align: center;
+			margin:0;
+		}
+		li.fb{
+			display: inline-block;
+			text-align: center;
+			margin-right: 5%;
+		}
+		a{
+			color:black;
+		}
+		li.menu:hover{
+			background-color: lightgrey;
+		}
+		#title{
+			position:absolute;
+			width:60%;
+		}
+		.triangle{
+			width: 0;
+			height: 0;
+			display: inline-block;
+			position:absolute;
+		}
+		#triangle1{/*
+			top:50px;
+			right:1025px;
+			border-right: 100px solid red;
+			border-top: 100px solid transparent;
+			border-bottom: 100px solid transparent;*/
+		}
+		#triangle2{/*
+			top:50px;
+			right:1125px;
+			border-left: 100px solid green;
+			border-top: 100px solid transparent;
+			border-bottom: 100px solid transparent;*/
+		}
+		#triangle3{/*
+			top:150px;
+			right:1025px;
+			border-bottom: 100px solid blue;
+			border-right: 100px solid transparent;
+			border-left: 100px solid transparent;*/
+		}
+		#triangle4{/*
+			top:50px;
+			right:1025px;
+			border-right: 100px solid transparent;
+			border-left: 100px solid transparent;
+			border-top: 100px solid orange;*/
+		}
+		#triangle5{/*
+			top:150px;
+			right:1050px;
+			border-top: 50px solid blue;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;*/
+		}
+		#triangle6{/*
+			top:150px;
+			right:1050px;
+			border-right: 50px solid green;
+			border-top: 50px solid transparent;
+			border-bottom: 50px solid transparent;*/
+		}
+		#triangle7{/*
+			top:200px;
+			right:1050px;
+			border-top: 50px solid transparent;
+			border-left: 50px solid red;
+			border-bottom: 50px solid transparent;*/
+		}
+		#triangle8{/*
+			top:200px;
+			right:1000px;
+			border-top: 100px solid transparent;
+			border-right: 100px solid blue;
+			border-bottom: 100px solid transparent;*/
+		}
+		#triangle9{/*
+			top:200px;
+			right:1100px;
+			border-top: 200px solid transparent;
+			border-right: 100px solid orange;
+			border-bottom: 0px solid transparent;*/
+		}
+		#triangle10{/*
+			top:300px;
+			right:1000px;
+			border-top: 100px solid transparent;
+			border-left: 100px solid red;
+			border-bottom: 100px solid transparent;*/
+		}
+		#triangle11{/*
+			top:400px;
+			right:1100px;
+			border-left: 100px solid transparent;
+			border-top: 100px solid green;
+			border-right: 0px solid transparent;*/
+		}
+		#triangle12{/*
+			top:400px;
+			right:1100px;
+			border-top: 100px solid transparent;
+			border-bottom: 50px solid transparent;
+			border-left: 100px solid blue;*/
+		}
+		#triangle13{/*
+			top:400px;
+			right:1000px;
+			border-top: 50px solid transparent;
+			border-bottom: 100px solid transparent;
+			border-right: 50px solid orange;*/
+		}
+		#triangle14{/*
+			top:500px;
+			right:1050px;
+			border-left: 100px solid transparent;
+			border-right: 50px solid transparent;
+			border-bottom: 50px solid green;*/
+		}
+		#triangle15{/*
+			top:200px;
+			right:1000px;
+			border-top: 50px solid transparent;
+			border-bottom: 50px solid transparent;
+			border-right: 50px solid red;*/
+		}
+		#triangle16{/*
+			top:200px;
+			right:1000px;
+			border-top: 100px solid transparent;
+			border-bottom: 100px solid transparent;
+			border-left: 100px solid green;*/
+		}
+		#triangle17{/*
+			top:200px;
+			right:1100px;
+			border-top: 100px solid transparent;
+			border-bottom: 100px solid transparent;
+			border-right: 100px solid blue;*/
+		}
+		#triangle18{/*
+			top:350px;
+			right:950px;
+			border-left: 50px solid transparent;
+			border-right: 100px solid transparent;
+			border-bottom: 50px solid orange;*/
+		}
+		#triangle19{/*
+			top:250px;
+			right:950px;
+			border-left: 0px solid transparent;
+			border-right: 50px solid transparent;
+			border-bottom: 15px solid blue;*/
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/t-rex.js"></script>
+</head>
+<body onresize="something_professional(0)">
+	<div id="animal"></div>
+	<div id="title">
+		<h1 id="title-text">Metamorphis</h1>
+		<ul id="links">
+			<a href="#"><li class="menu">Link 1</li></a>
+			<a href="#"><li class="menu">Link 2</li></a>
+			<a href="#"><li class="menu">Link 3</li></a>
+			<a href="#"><li class="menu">Link 4</li></a>
+		</ul>
+		<!-- <p>[met-<em>uh</em>-<b>mawr</b>-fis]</p> -->
+		<p>
+			<a>REVEAL</a> group at RPI comprised of
+			<b>Neil Clarke</b>, <b>Diana Nyugen</b>, <b>Janice Ho</b>.
+		</p>
+		<p>
+			Creators of the hit game <b>Phony</b>,
+			which won the award for best art direction at the recent 2017
+			video game judgement thing. Recently this has allowed the team
+			to become the amazing, well-rounded individuals they are today.
+			It's cool, it's a cool time.
+		</p>
+		<ol>
+			<li class="fb">
+				<a href="https://www.facebook.com/PHONYthegame/">
+					<img src="/img/fb_icon.png" alt="Facebook" style="width:25px;height:25px;">
+				</a>
+			</li>
+			<li class="fb">
+				<a href="https://twitter.com/PHONYthegame">
+					<img src="/img/twitter_icon.png" alt="Twitter" style="width:25px;height:25px;">
+				</a>
+			</li>
+			<li class="fb">
+				<a href="https://www.instagram.com/">
+					<img src="/img/insta_icon.png" alt="Instagram" style="width:25px;height:25px;">
+				</a>
+			</li>
+		</ol>
+	</div>
+
+	<script>
+		var morph = 1;
+		var max = 3;
+
+		var t_rex_height = 125;
+		var t_rex_width = 120;
+
+		var snake_height = 100;
+		var snake_width = 200;
+
+		var wolf_height = 125;
+		var wolf_width = 20;
+
+		var testing = false;
+		var speed = 100;
+
+		var screenWidth;
+		var screenHeight;
+
+		function control(){
+			if(morph == max){ morph = 1; }
+			else{ morph = morph + 1; }
+			something_professional(1);
+		}
+		function fix_title(num){
+			if(num == 1){
+				$('#title').css("width", "90%");
+				$('#title').css("top", "175px");
+				$('#title').css("right", "5%");
+				$('#title-text').css("text-align", "center");
+			}
+			if(num == 0){
+				$('#title').css("width", "50%");
+				$('#title').css("top", ((screenHeight - $('#title').height()) / 2).toFixed() + "px");
+				$('#title').css("right", (screenWidth / 8).toFixed() + "px");
+				$('#title-text').css("text-align", "left");
+			}
+		}
+		function something_professional(num){
+			screenWidth = $(window).width();
+			screenHeight = $(window).height();
+			$('#title').css("top", ((screenHeight - $('#title').height()) / 2).toFixed() + "px");
+			$('#title').css("right", (screenWidth / 24).toFixed() + "px");
+			$('#animal').html("");
+			for (var i = 24; i >= 0; i--) {
+				$('#animal').html($('#animal').html() + "<div id=\"triangle" + i.toString() + "\" class=\"triangle\" onclick=\"control()\"></div>");
+			};
+			//animation((screenHeight / 2) - 100, (screenWidth / 2));
+			if(!testing){
+				if(morph == 1 && num == 1){
+					var i = 1;
+					var top = (screenHeight - t_rex_height - 50) / 2;
+					var right = (2 * screenWidth / 3) + t_rex_width;
+					if((screenWidth / 3) < snake_width){
+						top = 25;
+						right = (screenWidth / 2) + (t_rex_width / 2);
+						fix_title(1);
+					}else{ fix_title(0); }
+
+					var interval = setInterval(function(){
+						make_t_rex(top, right, i);
+						i += 1;
+						if(i >= 5){
+							clearInterval(interval);
+						}
+					}, speed);
+				}else if(morph == 2 && num == 1){
+					var i = 1;
+					var top = (screenHeight - snake_height - 50) / 2;
+					var right = (2 * screenWidth / 3) + snake_width + 50;
+					if((screenWidth / 3) < snake_width + 50){
+						top = 25;
+						right = (screenWidth / 2) + (snake_width / 2);
+						fix_title(1);
+					}else{ fix_title(0); }
+					var interval = setInterval(function(){
+						make_snake(top, right, i);
+						i += 1;
+						if(i >= 5){
+							clearInterval(interval);
+						}
+					}, speed);
+				}else if(morph == 3 && num == 1){
+					var i = 1;
+					var top = (screenHeight - wolf_height - 50) / 2;
+					var right = (2 * screenWidth / 3) + wolf_width + 50;
+					if((screenWidth / 3) < snake_width + 50){
+						top = 25;
+						right = (screenWidth / 2) + (wolf_width / 2);
+						fix_title(1);
+					}else{ fix_title(0); }
+
+					var interval = setInterval(function(){
+						make_wolf(top, right, i);
+						i += 1;
+						if(i >= 5){
+							clearInterval(interval);
+						}
+					}, speed);
+				}
+				if(morph == 1 && num == 0){
+					var top = (screenHeight - t_rex_height - 50) / 2;
+					var right = (2 * screenWidth / 3) + t_rex_width;
+					if((screenWidth / 3) < t_rex_width){
+						top = 25;
+						right = (screenWidth / 2) + (t_rex_width / 2);
+						fix_title(1);
+					}else{ fix_title(0); }
+					make_t_rex(top, right, 0);
+				}else if(morph == 2 && num == 0){
+					var top = (screenHeight - snake_height - 50) / 2;
+					var right = (2 * screenWidth / 3) + snake_width + 50;
+					if((screenWidth / 3) < snake_width + 50){
+						top = 25;
+						right = (screenWidth / 2) + (snake_width / 2);
+						fix_title(1);
+					}else{ fix_title(0); }
+					make_snake(top, right, 0);
+				}else if(morph == 3 && num == 0){
+					var top = (screenHeight - wolf_height - 50) / 2;
+					var right = (2 * screenWidth / 3) + wolf_width + 50;
+					if((screenWidth / 3) < wolf_width + 50){
+						top = 25;
+						right = (screenWidth / 2) + (wolf_width / 2);
+						fix_title(1);
+					}else{ fix_title(0); }
+					make_wolf(top, right, 0);
+				}
+			}
+		}
+		window.onload = something_professional(1);
+		// window.onresize = something_professional();
+	</script>
+
+</body>
+</html>

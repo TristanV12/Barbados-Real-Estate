@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<style>
+		body{
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+		.triangle{
+			width: 0;
+			height: 0;
+		}
+		#top-triangle{
+			border-left: 0px solid transparent;
+			display:inline-block;
+			z-index: 1;
+		}
+		#title{
+			text-align: center;
+			border:1px solid black;
+			display:inline-block;
+			position: absolute;
+			z-index: -1;
+			background-color: white;
+		}
+		#bottom-triangle{
+			position: absolute;
+			border-left: 500px solid transparent;
+			border-right: 0px solid transparent;
+			border-bottom: 50px solid green;
+			display:inline-block;
+			z-index: -2;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div id="bottom-triangle" class="triangle"></div>
+	<div id="title">
+		<h1>Metamorphis</h1>
+		<p>We do shit on the regular. All the goddamn time.</p>
+		<p>I think the group involves <b>Neil Clarke</b>, fuckin' <b>Diana Nyugen</b>(?), maybe <b>Janice Lastname</b>.</p>
+	</div>
+	<div id="top-triangle" class="triangle"></div>
+
+	<script>
+		function load_shit(){
+			var screenWidth = $(window).width();
+			var screenHeight = $(window).height();
+			$('#top-triangle').css("border-right", (screenWidth / 2).toFixed() + "px solid transparent");
+			$('#top-triangle').css("border-top", (3 * screenHeight / 4).toFixed() + "px solid #090045");
+			$('#bottom-triangle').css("top", (screenHeight / 4).toFixed() + "px");
+			$('#bottom-triangle').css("right", "0px");
+			$('#bottom-triangle').css("border-left", (screenWidth / 2).toFixed() + "px solid transparent");
+			$('#bottom-triangle').css("border-bottom", ((3 * screenHeight / 4) - 1).toFixed() + "px solid #090045");
+			$('#title').css("width", (3 * screenWidth / 4).toFixed() + "px");
+			$('#title').css("top", ((screenHeight / 2) - $('#title').height() / 2).toFixed() + "px");
+			$('#title').css("right", ((screenWidth / 2) - $('#title').width() / 2).toFixed() + "px");
+		}
+		window.onload = load_shit();
+		window.onresize = load_shit();
+	</script>
+
+</body>
+</html>

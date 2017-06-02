@@ -1,5 +1,5 @@
 body{
-	background: #00267f;
+	background: #E6DEDC;
 	color:white;
 }
 
@@ -51,4 +51,13 @@ img {
 
 p, label {
 	color:white;
+}
+
+.panel-heading {
+	margin-bottom: 0;
+	background: #0B486B;
+}
+
+.panel-body {
+	background: #3B8686;
 }
